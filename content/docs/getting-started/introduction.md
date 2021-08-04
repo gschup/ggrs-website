@@ -1,6 +1,6 @@
 +++
 title = "Introduction"
-description = "AdiDoks is a Zola theme helping you build modern documentation websites, which is a port of the Hugo theme Doks for Zola."
+description = "GGRS is a reimagination of the GGPO network SDK written in 100% safe Rust."
 date = 2021-05-01T08:00:00+00:00
 updated = 2021-05-01T08:00:00+00:00
 draft = false
@@ -9,23 +9,23 @@ sort_by = "weight"
 template = "docs/page.html"
 
 [extra]
-lead = 'AdiDoks is a Zola theme helping you build modern documentation websites, which is a port of the Hugo theme <a href="https://github.com/h-enk/doks">Doks</a> for Zola.'
+lead = 'GGRS is a reimagination of the GGPO network SDK written in 100% safe Rust.'
 toc = true
 top = false
 +++
 
 ## Quick Start
 
-One page summary of how to start a new AdiDoks project. [Quick Start →](../quick-start/)
+One page summary of how to start developing with GGRS. [Quick Start →](../quick-start/)
 
-## Go further
+## Examples
 
-Contributing and Help.
+Find full game examples using GGRS. [Examples →](https://github.com/gschup/ggrs/tree/main/examples)
 
 ## Contributing
 
-Find out how to contribute to Doks. [Contributing →](../../contributing/how-to-contribute/)
+Find out how to contribute to GGRS. [Contributing →](../../contributing/how-to-contribute/)
 
 ## Help
 
-Get help on Doks. [Help →](../../help/faq/)
+Get help on GGRS. [Help →](../../help/faq/)

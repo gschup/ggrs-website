@@ -1,37 +1,47 @@
 +++
 title = "How to Contribute"
-description = "Contribute to AdiDoks, improve documentation, or submit to showcase."
-date = 2021-05-01T18:10:00+00:00
-updated = 2021-05-01T18:10:00+00:00
+description = "Contribute to GGRS, improve documentation, or submit an example."
+date = 2021-04-01T08:50:45+00:00
+updated = 2021-04-01T08:50:45+00:00
 draft = false
 weight = 410
 sort_by = "weight"
 template = "docs/page.html"
 
 [extra]
-lead = "Contribute to AdiDoks, improve documentation, or submit to showcase."
+lead = "First and foremost: Thank you for showing interest in contributing to GGRS!"
 toc = true
 top = false
 +++
 
 👉 Make sure to read the [Code of Conduct](../code-of-conduct/).
 
-## Contribute to Doks
+👉 The code can be found in the [`ggrs` repository](https://github.com/gschup/ggrs)
 
-👉 The AdiDoks code lives in the [`adidoks` repository](https://github.com/aaranxu/adidoks)
+👉 If you have a cool example or showcase of GGRS in use, let me know so your project can be highlighted!
 
-- Follow the [GitHub flow](https://guides.github.com/introduction/flow/).
-- Follow the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)
+## Create an issue
 
-### Create an issue
+- [Bug report](https://github.com/gschup/ggrs/issues/new?assignees=&labels=bug&template=bug_report.md&title=)
+- [Feature request](https://github.com/gschup/ggrs/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=)
 
-- [Bug report](https://github.com/aaranxu/adidoks/issues/new?template=bug-report---.md)
-- [Feature request](https://github.com/aaranxu/adidoks/issues/new?template=feature-request---.md)
+## Contribute to GGRS
 
-## Improve documentation
+Please send a [GitHub Pull Request](https://github.com/gschup/ggrs/pull/new/main) with a clear list of what you've done (read more about [pull requests](http://help.github.com/pull-requests/)). When you send a pull request, it would be great if you wrote unit- or integration tests for your changes. Please format your code via `cargo fmt` and make sure all of your commits are atomic (one feature per commit).
 
-👉 The documentation lives in [`./content/docs/`](https://github.com/aaranxu/adidoks/tree/master/content/docs)
-of the [`adidoks` repository](https://github.com/h-enk/getdoks.org).
+Always write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should look like this:
 
-- Follow the [GitHub flow](https://guides.github.com/introduction/flow/).
-- Follow the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)
+    >$ git commit -m "prefix: brief summary of the commit
+    > 
+    > A paragraph describing what changed and its impact."
+
+With the following prefixes commonly used:
+
+- `feat`: for new features
+- `fix`: for fixing a bug
+- `doc`: for adding/changing documentation
+- `test`: for adding/changing tests
+- `chore`: for any minor code cleanups
+
+More about the [GitHub flow](https://guides.github.com/introduction/flow/).
+More about the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)
