@@ -128,8 +128,6 @@ You don't need to define players or start the session. Because there are no remo
 
 In your main game loop, you should call `advance_frame(...)` in fixed intervals. How to do that exactly depends heavily on your software stack. You can also check out [this article](https://medium.com/@tglaiel/how-to-make-your-game-run-at-60fps-24c61210fe75) or [this article](https://gafferongames.com/post/fix_your_timestep/) to learn more about running your own gameloop.
 
-WARNING: Currently, this interval should be 60 FPS, otherwise frame synchronization will be slightly off for `P2PSession`.
-
 Please see [BoxGame P2P](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game_p2p.rs), [BoxGame Spectator](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game_spectator.rs) or [BoxGame SyncTest](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game_synctest.rs) for a full code example.
 
 ### Handling Requests

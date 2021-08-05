@@ -20,12 +20,12 @@ One page summary of how to start developing with GGRS. [Quick Start →](../quic
 
 ## Examples
 
-Find full game examples using GGRS. [Examples →](https://github.com/gschup/ggrs/tree/main/examples)
+Find full game examples. [Examples →](https://github.com/gschup/ggrs/tree/main/examples)
 
 ## Contributing
 
-Find out how to contribute to GGRS. [Contributing →](../../contributing/how-to-contribute/)
+Find out how to contribute. [Contributing →](../../contributing/how-to-contribute/)
 
 ## Help
 
-Get help on GGRS. [Help →](../../help/faq/)
+See the FAQ. [Help →](../../help/faq/)

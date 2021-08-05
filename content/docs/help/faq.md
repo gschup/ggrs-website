@@ -16,9 +16,9 @@ top = false
 
 ## What is GGRS?
 
-GGRS (Good Game Rollback System) is a reimagination of the [GGPO](https://www.ggpo.net/) network SDK written in 100% safe Rust.
+GGRS (Good Game Rollback System) is a reimagination of the [GGPO](https://www.ggpo.net/) P2P rollback networking library written in 100% safe Rust.
 
-## What is GGPO?
+## What is GGPO / Rollback?
 
 Taken from [the official GGPO website](https://ggpo.net/):
 
