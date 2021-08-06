@@ -34,7 +34,7 @@ By keeping a full history of gamestates, GGPO can always load the most recent an
 
 ## Saving and Loading Game State
 
-Depending on your application, saving and loading the game state can look wildly different, but one often used technique is serialization, for example with rusts popular [Serde](https://serde.rs/). In fact, GGRS's own examples use `serde` and `bincode` in order to save and load the gamestate. While very convenient, this usually results in computation time problems when saving multiple times in a single step, as in a rollback shown above.
+Depending on your application, saving and loading the game state can look wildly different, but one often used technique is serialization, for example with Rust's popular [serde](https://serde.rs/). In fact, GGRS's own examples use `serde` and `bincode` in order to save and load the gamestate. While very convenient, this usually results in long computation times when saving multiple times in a single step, as in a rollback shown above.
 
 ## Sparse Saving Mode
 
@@ -46,9 +46,9 @@ sess.set_sparse_saving(true)?;
 
 That's it. You don't need to change anything else in your code. **When in sparse saving mode, GGRS minimizes *save requests*** at the cost of additional update steps.
 
-This works by only ever saving latest confirmed frame, for which we have received and confirmed input from all clients. This state is guaranteed to be correct and can be used as a loading point for every rollback. If no *natural* rollbacks occur (due to all predictions being correct or all inputs arriving on time), we sometimes might need to artificially induce a rollback in order to resimulate the last confirmed state and save it.
+This works by only ever saving the latest confirmed frame, for which we have received and confirmed input from all clients. This state is guaranteed to be correct and can be used as a loading point for every rollback. If no *natural* rollbacks occur (due to all predictions being correct or all inputs arriving on time), we sometimes might need to artificially induce a rollback in order to resimulate the last confirmed state and save it.
 
-With sparse saving, GGRS guarantees to save at most once per update tick, at the cost of potentially longer rollback sequences. In the [Rapier Synctest Example](https://github.com/gschup/ggrs/tree/main/examples/rapier), an update step costs less than 0.5ms, while saving costs up to 3ms of time (due to the whole physics pipeline being serialized, which is definitely not optimal). In a hypothetical P2P example, this disparity makes the rapier example a prime candidate for the sparse saving feature.
+With sparse saving, GGRS guarantees to save at most once per update tick, at the cost of potentially longer rollback sequences. In the [Rapier Synctest Example](https://github.com/gschup/ggrs/tree/main/examples/rapier), a single update step costs less than 0.5ms, while saving costs up to 3ms of time (due to the whole physics pipeline being serialized, which is definitely not optimal). In a hypothetical P2P example, this disparity makes the rapier example a prime candidate for the sparse saving feature.
 
 ## Conclusion
 
