@@ -69,6 +69,12 @@ let desired_delay = 2;
 sess.set_frame_delay(desired_delay, local_handle)?;
 ```
 
+Per default, GGRS requests to save the gamestate after every update step in order to minimize rollbacks as much as possible. If saving your game state takes much longer than performing multiple update steps, GGRS has an alternative sparse saving mode where instead the amount of save requests are minimized at the cost of some additional state update requests.
+
+```rust
+sess.set_sparse_saving(true)?;
+```
+
 Finally, you can start the session. GGRS will then make an effort to establish communication between all clients. Only if the connection to all remotes (including spectators) has been established, the session will be able to advance the gamestate and send inputs.
 
 ```rust
@@ -103,7 +109,7 @@ sess.start_session()?;
 
 ### SyncTestSession
 
-First, create a new session. `check_distance` specifies how many frames of rollback you want to induce every frame. Currently, the value needs range from 2 to 7.
+First, create a new session. `check_distance` specifies how many frames of rollback you want to induce every frame. This value cannot exceed the maximum predicition frames allowed. Currently, 7 is the maximum distance of rollback that can occur.
 
 ```rust
 let check_distance : u32 = 7;

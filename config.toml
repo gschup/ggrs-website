@@ -84,10 +84,11 @@ library = "katex"  # options: "katex", "mathjax". default is "katex".
 enable = true
 # this image will be used as fallback if a page has no image of its own
 image = "doks.png"
-twitter_site = "aaranxu"
-twitter_creator = "aaranxu"
-facebook_author = "ichunyun"
-facebook_publisher = "ichunyun"
+twitter_site = "g_schup"
+twitter_creator = "g_schup"
+facebook_author = ""
+facebook_publisher = ""
+
 og_locale = "en_US"
 
 ## JSON-LD
