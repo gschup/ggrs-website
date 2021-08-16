@@ -16,11 +16,11 @@ top = false
 
 ## What is GGRS?
 
-GGRS (Good Game Rollback System) is a reimagination of the [GGPO](https://www.ggpo.net/) P2P rollback networking library written in 100% safe Rust.
+GGRS (Good Game Rollback System) is a reimagination of the 👉[GGPO](https://www.ggpo.net/) P2P rollback networking library written in 100% safe Rust.
 
 ## What is GGPO / Rollback?
 
-Taken from [the official GGPO website](https://ggpo.net/):
+Taken from 👉[the official GGPO website](https://ggpo.net/):
 
 >Rollback networking is designed to be integrated into a fully deterministic peer-to-peer engine.  With full determinism, the game is guaranteed to play out the same way on all players computers if we simply feed them the same inputs.  One way to achieve this is to exchange inputs for all players over the network, only execution a frame of gameplay logic when all players have received all the inputs from their peers.  This often results in sluggish, unresponsive gameplay.  The longer it takes to get inputs over the network, the slower the game becomes.
 
@@ -28,7 +28,7 @@ Taken from [the official GGPO website](https://ggpo.net/):
 
 >Don't worry if that sounds like a headache.  GGPO was designed specifically to implement the rollback algorithms and low-level networking logic in a way that's easy to integrate into your existing game loop.  If you simply implement the functionality to save your game state, load it back up, and execute a frame of game state without rendering its outcome, GGPO can take care of the rest.
 
-For more information about GGPO, check out [the official website](http://ggpo.net/) or [the official github repository](https://github.com/pond3r/ggpo). A very good pseudocode explanation for general rollback networking can be found [in this Gist](https://gist.github.com/rcmagic/f8d76bca32b5609e85ab156db38387e9).
+For more information about GGPO, check out 👉[the official website](http://ggpo.net/) or 👉[the official github repository](https://github.com/pond3r/ggpo). A very good pseudocode explanation for general rollback networking can be found 👉[in this Gist](https://gist.github.com/rcmagic/f8d76bca32b5609e85ab156db38387e9).
 
 ## Even more questions?
 

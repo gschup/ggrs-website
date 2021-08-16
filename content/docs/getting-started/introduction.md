@@ -16,16 +16,16 @@ top = false
 
 ## Quick Start
 
-One page summary of how to start developing with GGRS. [Quick Start →](../quick-start/)
+One page summary of how to start developing with GGRS. 👉[Quick Start](../quick-start/)
 
 ## Examples
 
-Find full game examples. [Examples →](https://github.com/gschup/ggrs/tree/main/examples)
+Find full game examples. 👉[Examples](https://github.com/gschup/ggrs/tree/main/examples)
 
 ## Contributing
 
-Find out how to contribute. [Contributing →](../../contributing/how-to-contribute/)
+Find out how to contribute. 👉[Contributing](../../contributing/how-to-contribute/)
 
 ## Help
 
-See the FAQ. [Help →](../../help/faq/)
+See the FAQ. 👉[Help](../../help/faq/)

@@ -29,7 +29,7 @@ GGRS mainly operates through one of three sessions; each providing different fun
 
 For all sessions, you will have to define the number of active players contributing to the game input via `num_players` as well as the size of such inputs via `input_size`. The `local_port` is where your client will receive packets of remote clients.
 
-GGRS does not handle NAT hole punching. Check out [this article](https://keithjohnston.wordpress.com/2014/02/17/nat-punch-through-for-multiplayer-games/) for more information on the topic.
+GGRS does not handle NAT hole punching. Check out 👉[this article](https://keithjohnston.wordpress.com/2014/02/17/nat-punch-through-for-multiplayer-games/) for more information on the topic.
 
 ### P2PSession
 
@@ -132,9 +132,9 @@ You don't need to define players or start the session. Because there are no remo
 
 ## Main Loop
 
-In your main game loop, you should call `advance_frame(...)` in fixed intervals. How to do that exactly depends heavily on your software stack. You can also check out [this article](https://medium.com/@tglaiel/how-to-make-your-game-run-at-60fps-24c61210fe75) or [this article](https://gafferongames.com/post/fix_your_timestep/) to learn more about running your own gameloop.
+In your main game loop, you should call `advance_frame(...)` in fixed intervals. How to do that exactly depends heavily on your software stack. You can also check out 👉[this article](https://medium.com/@tglaiel/how-to-make-your-game-run-at-60fps-24c61210fe75) or 👉[this article](https://gafferongames.com/post/fix_your_timestep/) to learn more about running your own gameloop.
 
-Please see [BoxGame P2P](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game_p2p.rs), [BoxGame Spectator](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game_spectator.rs) or [BoxGame SyncTest](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game_synctest.rs) for a full code example.
+Please see 👉[BoxGame P2P](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game_p2p.rs), 👉[BoxGame Spectator](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game_spectator.rs) or 👉[BoxGame SyncTest](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game_synctest.rs) for a full code example.
 
 ### Handling Requests
 
@@ -144,7 +144,7 @@ If calling `advance_frame(...)` succeeds, it will return a `Vec<GGRSRequest>`. H
 - `LoadGameState { cell: GameStateCell }`: Save the current gamestate by calling `cell.save(your_state)`.
 - `SaveGameState { cell: GameStateCell, frame: Frame }`: Load a previous gamestate by calling `your_state = cell.load()`. The provided `frame` defines frame from which this gamestate is at.
 
-Please see [BoxGame](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game.rs) for a full code example.
+Please see 👉[BoxGame](https://github.com/gschup/ggrs/tree/main/examples/box_game/box_game.rs) for a full code example.
 
 ### Polling Remote Clients
 

@@ -7,7 +7,7 @@ lead = '<b>GGRS</b> is a reimagination of the GGPO network SDK written in Rust.'
 url = "/docs/getting-started/introduction/"
 url_button = "Get started"
 repo_version = "GitHub"
-repo_license = "Open-source MIT License."
+repo_license = "Open Source MIT / Apache 2.0:"
 repo_url = "https://github.com/gschup/ggrs"
 
 [[extra.list]]

@@ -20,8 +20,8 @@ __TLDR__: We do not use cookies and we do not collect any personal data.
 - No information is mined and harvested for personal and behavioral trends.
 - No information is monetized.
 
-## Contact us
+## Contact
 
-[Contact us](https://github.com/gschup/ggrs) if you have any questions.
+Contact me if you have any questions.
 
 Effective Date: _1st August 2021_
