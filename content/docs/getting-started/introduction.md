@@ -16,7 +16,7 @@ top = false
 
 ## Tutorial
 
-Tutorial and code snippets on how to start developing with GGRS. 👉[Tutorial](../tutorial/setup/)
+Tutorial and code snippets on how to start developing with GGRS. 👉[Tutorial](../../tutorial/setup/)
 
 ## Examples
 
